@@ -4,8 +4,8 @@ class StringBuilder {
 
 	#value;
 
-	constructor(value) {
-		this.#value = value;
+	constructor(initialValue) {
+		this.#value = initialValue;
 	}
 
 
@@ -28,7 +28,6 @@ class StringBuilder {
 }
 
 const builder = new StringBuilder(".");
-const str = builder.getValue();
 console.log(builder.getValue()); // "."
 builder.padStart("^");
 console.log(builder.getValue()); // "^."
